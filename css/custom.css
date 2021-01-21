@@ -52,3 +52,50 @@
     margin-bottom: 20px;
 
 }
+
+/* Main section */
+
+.left-column {
+    display: inline-block;
+    float: left;
+    width: 50%;
+    
+}
+.right-column {
+    display: inline-block;
+    float: right;
+    width: 40%;
+}
+
+main .block-title {
+    margin-bottom: 30px;
+    text-transform: uppercase;
+
+}
+
+main .block-description {
+    margin-bottom: 30px;
+}
+
+main .block-description > a {
+    color: #EA1E63ed;
+    text-decoration: none;
+}
+hover:: main .block-description > a {
+    color: blue;
+    text-decoration: underline;
+}
+@media (max-width: 900px) {
+    .left-column {
+        float: left;
+        width: 100%;
+        margin-bottom: 60px;
+        
+    }
+    .right-column {
+        float: right;
+        width: 100%;
+    }
+}
+
+

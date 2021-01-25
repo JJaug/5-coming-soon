@@ -106,9 +106,23 @@ footer {
     color: #fff8;
 }
 
-footer .fa {
+.container > .socials {
+    padding: 20px 0;
+    border-bottom: 2px solid #fff;
+}
+
+.socials .fa {
     font-size: 20px;
+    line-height: 40px;
     color: #fff;
+    width: 40px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.socials .fa:hover {
+    background-color: #fff;
+    color: #03A9F5 ;
 }
 
 footer a {

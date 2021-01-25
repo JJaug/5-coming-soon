@@ -81,8 +81,7 @@ main .block-description > a {
     color: #EA1E63ed;
     text-decoration: none;
 }
-hover:: main .block-description > a {
-    color: blue;
+main .block-description > a:hover {
     text-decoration: underline;
 }
 @media (max-width: 900px) {

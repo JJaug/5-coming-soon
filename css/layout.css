@@ -29,7 +29,7 @@
         margin: 0 calc(50% - 300px);
     }
 }
-@media (max-width: 680px) {
+@media (max-width: 700px) {
     .container > .row ,
     .container > .short-row {
         width: 100%;

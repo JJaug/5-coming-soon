@@ -24,6 +24,12 @@ const socialsData = [
         href: '#'
     },
     {
+        icon: 'hantelis',
+        href: '#'
+    },
+    'asfas',
+    15615,
+    {
         icon: 'rss',
         href: '#'
     },

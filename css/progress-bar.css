@@ -18,6 +18,7 @@
 .progress-bar > .texts > .value {
     display: inline-block;
     float: right;
+    margin-bottom: 5px;
 }
 
 .progress-bar > .bar {
@@ -32,6 +33,24 @@
     display: inline-block;
     width: 80%;
     height: 100%;
-    background-color: var(--main-color);
+    background-color: transparent;
+}
 
+.progress-bar > .bar > .progress > .loading {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--main-color);
+    animation-name: loading;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes loading {
+    0%{
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
 }

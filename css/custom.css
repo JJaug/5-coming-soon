@@ -48,6 +48,17 @@
     margin-bottom: 20px;
 }
 
+.hero .form > input {
+    color: #fff;
+    border-bottom-color: #fff;
+    outline: none;
+
+}
+
+.hero .form > input::placeholder {
+    color: #fff;
+
+}
 .hero .mouse {
     margin-bottom: 20px;
 
@@ -83,7 +94,19 @@ main .block-description > a {
 }
 main .block-description > a:hover {
     text-decoration: underline;
+    
 }
+
+@media (min-width: 1100px) {
+    .right-column .form > input {
+        width: calc(50% - 10px);
+        float: left;
+    }
+    .right-column .form > input:first-of-type {
+        margin-right: 20px;
+    }
+}
+
 @media (max-width: 900px) {
     .left-column {
         float: left;
@@ -179,3 +202,4 @@ footer > .short-row > p {
         display: none;
     }
 }
+

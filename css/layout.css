@@ -2,18 +2,21 @@
     display: inline-block;
     width: 100%;
     padding: 60px 0;
+    float: left;
 }
 
 .container > .row {
     display: inline-block;
     width: 1000px;
     margin: 0 calc(50% - 500px);
+    float: left;
 }
 
 .container > .short-row {
     display: inline-block;
     width: 600px;
     margin: 0 calc(50% - 300px);
+    float: left;
 }
 
 @media (max-width: 1100px) {

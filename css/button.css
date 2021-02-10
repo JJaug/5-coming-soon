@@ -3,6 +3,7 @@
     padding: 12px 40px;
     font-size: 18px;
     line-height: 20px;
+    text-align: center;
     border: none;
     border-radius: 3px;
     background-color: var(--secondary-color);
@@ -21,4 +22,12 @@
 }
 .hero > .btn {
     align-items: center;
+}
+.btn.fa {
+    width: 40px;
+    font-size: 26px;
+    padding: 0;
+    height: 40px;
+    line-height: 36px;
+    border-radius: 50%;
 }

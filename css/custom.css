@@ -8,8 +8,13 @@
 /* hero section */
 
 .hero {
+    min-height: 100vh;
     text-align: center;
     padding-bottom: 30px;
+    background-image: url(../img/background.png);
+    background-size: cover;
+    background-position:bottom center;
+    background-attachment: fixed ;
 }
 
 .hero .logo {
@@ -33,8 +38,8 @@
     display: inline-block;
     width: 100%;
     margin-bottom: 60px;
-    font-size: 18px;
-    line-height: 22px;
+    font-size: 16px;
+    line-height: 20px;
     color: #555;
 
 }
@@ -48,6 +53,17 @@
     margin-bottom: 20px;
 }
 
+.hero .form > input {
+    color: #fff;
+    border-bottom-color: #fff;
+    outline: none;
+
+}
+
+.hero .form > input::placeholder {
+    color: #fff;
+
+}
 .hero .mouse {
     margin-bottom: 20px;
 
@@ -73,6 +89,11 @@ main .block-title {
 
 }
 
+.block-description {
+    font-size: 14px;
+    line-height: 18px;
+}
+
 main .block-description {
     margin-bottom: 30px;
 }
@@ -83,7 +104,19 @@ main .block-description > a {
 }
 main .block-description > a:hover {
     text-decoration: underline;
+    
 }
+
+@media (min-width: 1100px) {
+    .right-column .form > input {
+        width: calc(50% - 10px);
+        float: left;
+    }
+    .right-column .form > input:first-of-type {
+        margin-right: 20px;
+    }
+}
+
 @media (max-width: 900px) {
     .left-column {
         float: left;
@@ -106,13 +139,30 @@ footer {
     color: #fff8;
 }
 
+footer.container {
+    text-align: center;
+    line-height: 30px;
+    color: #fff9;
+    padding-bottom: 0;
+}
+
+.container > .back-to-top {
+    position: relative;
+}
+
+.container > .back-to-top > .btn {
+    position: absolute;
+    top: -25px;
+    right: -11px;
+}
+
 .container > .socials {
     padding: 20px 0;
     border-bottom: 2px solid #fff;
 }
 
 .socials .fa {
-    font-size: 20px;
+    font-size: 0;
     line-height: 40px;
     color: #fff;
     width: 40px;
@@ -120,6 +170,9 @@ footer {
     transition: all 0.3s;
 }
 
+.socials .fa::before {
+    font-size: 20px;
+}
 .socials .fa:hover {
     background-color: #fff;
     color: #03A9F5 ;
@@ -171,7 +224,7 @@ footer > .short-row > p {
     width: 100%;
 }
 
-@media (max-width : 700px) {
+@media (max-width : 680px) {
     .bottom-texts {
         flex-direction: column;
     }
@@ -179,3 +232,10 @@ footer > .short-row > p {
         display: none;
     }
 }
+@media (max-width: 680px) {
+    .back-to-top {
+        display: none;
+    }
+}
+
+

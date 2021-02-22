@@ -1,4 +1,5 @@
 import { clock } from './components/clock.js';
+import { Forms } from './components/forms/Forms.js';
 import { ProgressBar } from './components/progressBar.js'
 import { progressBarData} from './data/progressBarData.js'
 import { socialsData } from './data/socialsData.js';
@@ -10,4 +11,6 @@ renderSocials('footer > .socials', socialsData);
 
 new ProgressBar('.left-column' ,progressBarData);
 
+console.clear();
 
+new Forms();
